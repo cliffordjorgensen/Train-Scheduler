@@ -11,19 +11,6 @@ var searchButton = $("#searchButton");
 //clear results variable holds html clearResults ID
 var clearResults = $("#clearResults");
 
-
-// numRecords variable for record limit
-//searchButton
-//searchTerm , has IDs
-
-//if limit on records exists
-// if (numRecords) {
-//   let rec = $(".record").attr("limit");
-//   query1.append(`&limit=${rec}`);
-// }
-
-
-
 searchButton.on("click", function () {
     searchTerm = $("#search-term");
     numRecords = $("#num-records").val();
@@ -34,11 +21,9 @@ searchButton.on("click", function () {
     if (start !== "") {
         query1.append(`&begin_date=${start}`);
     }
-
     if (end !== "") {
         query1.append(`&end_date=${end}`);
     }
-
     let queryURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query1}&api-key=GevTC67WTlBRpmBttQ4SDfrAxT6N0VRH`;
 
     $.ajax({
@@ -53,11 +38,7 @@ searchButton.on("click", function () {
             $("#article-view").append(results);
         }
     });
-
 });
-
-// ajax call
-// API Key GevTC67WTlBRpmBttQ4SDfrAxT6N0VRH
 
 clearResults.on("click", function () {
     $("#searchButton").val('');

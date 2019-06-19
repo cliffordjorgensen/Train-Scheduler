@@ -1,4 +1,13 @@
-.jumbotron {
-  background-image: url("../img/jumbotron_bg.jpg");
-  background-size: cover;
+.container {
+    background-color:azure;
+    border-radius: 5%;
+}
+body {
+    background-color: darkgoldenrod;
+}
+.jumbotron{
+    background-color: lightsteelblue;
+    border-radius: 2%;
+    background-image: url("../images/020170324222215.jpg;");
+    background-size: cover;
 }
