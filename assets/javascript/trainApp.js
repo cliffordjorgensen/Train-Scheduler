@@ -1,14 +1,8 @@
-// variable to hold start year
 var startYear;
-//variable end year
 var endYear;
-// variable holds user search term
 var searchTerm;
-//variable to hold specified number of records
 var numRecords;
-//search button variable holds html searchButton ID
 var searchButton = $("#searchButton");
-//clear results variable holds html clearResults ID
 var clearResults = $("#clearResults");
 
 searchButton.on("click", function () {
