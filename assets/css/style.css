@@ -1,14 +1,40 @@
 body {
-	background: url("../images/dark_fish_skin.png")no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-  	background-size: cover;
-  	color: black;
-  	font-family: 'Oswald', sans-serif; 
+    background: url("../images/020170324222215.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+    font-family: 'Oswald', sans-serif;
 }
 
-html{
-	font-family: 'Raleway', sans-serif;
-	color: black;
+html {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.lead {
+    float: right;
+}
+
+#theTime {
+    font-weight: bolder;
+}
+
+#clearResults {
+    float: right;
+}
+
+form {
+    margin: 8px;
+}
+
+.addFormAlert {
+    margin-top: 5px;
+    display: none;
+}
+
+.updateFormAlert {
+    margin-top: 5px;
+    display: none;
 }
